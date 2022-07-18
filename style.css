@@ -1,0 +1,25 @@
+.bg-image {
+  background-image: url(/images/homepage.webp);
+  height: 100vh;
+}
+
+.about-bg {
+  background-image: url(/images/aboutpage.avif);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.aboutservices {
+  position: absolute;
+  top: 77.5rem;
+}
+
+@media (max-width: 400px) {
+  .bg-image {
+    height: 120vh;
+  }
+
+  .about-bg {
+    height: 120vh;
+  }
+}
