@@ -13,13 +13,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
     <script defer src="script.js"></script>
     <title>Stornoway Construction</title>
   </head>
   <body>
     <div
-      class="bg-image"
-      style="background-image: url(/images/homepage.webp); height: 100vh"
+      class="img-fluid d-flex"
+      style="background-image: url(/images/homepage.webp);"
     >
       <nav class="navbar navbar-expand-lg py-5">
         <div class="container">
@@ -28,14 +33,14 @@
           >
 
           <i
-            class="bi bi-list text-light"
+            class="bi bi-list text-light navbar-toggler"
             id="icon"
             type="button"
             data-bs-toggler="collapse"
             data-bs-target="navmenu"
           ></i>
 
-          <div class="collapse navbar-collapse sm-auto justify-content-end">
+          <div class="collapse navbar-collapse sm-auto justify-content-end pb-0" id="navmenu" >
             <ul class="navbar-nav sm-auto">
               <li class="nav-item">
                 <a
@@ -81,9 +86,10 @@
         </div>
       </nav>
 
-      <div class="container py-3 mt-3 text-center">
+      <div class="container py-3 mt-3 text-center sm-auto">
         <div class="py-5 mt-5">
           <div class="py-5 mt-5">
+            <div class="py-5 mt-5">
             <div class="mt-5">
               <h1 class="fw-bold text-light" style="font-size: 6rem">
                 QUALITY YOU CAN TRUST
@@ -93,13 +99,14 @@
                   Get a Quote
                 </button>
               </div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="py-5 mt-5 text-center">
+    <section class="py-5 mt-5 text-center sm-auto">
       <div class="container">
         <!-- <div class="py-5"> -->
           <div class="py-5 mt-5">
@@ -119,6 +126,29 @@
               <button class="btn btn-dark">Read More</button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-black">
+      <div class="container py-5 sm-auto">
+        <h1 class="fw-bold text-center text-light py-5" style="font-size: 4rem;">PROJECTS</h1>
+        <div class="row py-5">
+          <div class="col d-flex">
+            <img src="/images/project1.avif" alt="">
+            <p class="fs-5 text-light">Huawei HQ, Frankfurt</p>
+          </div>
+
+          <div class="col">
+            <img src="/images/project1.avif" alt="">
+            <p class="fs-5 text-light">Huawei HQ, Frankfurt</p>
+          </div>
+
+          <div class="col">
+            <img src="/images/project1.avif" alt="">
+            <p class="fs-5 text-light">Huawei HQ, Frankfurt</p>
+          </div>
+
         </div>
       </div>
     </section>
