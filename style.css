@@ -26,12 +26,72 @@ html {
   background-size: cover;
 }
 
+.services-bg {
+  background-image: url("/images/servicepage.avif");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.careers-bg {
+  background-image: url("/images/careerspage.avif");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contuct-bg {
+  background-image: url("/images/contactpage.avif");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicecontuct {
+  background-image: url("/images/servicecontact.avif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .aboutservices {
-  height: 86%;
+  height: 60%;
   width: 100%;
 }
 
 .headquaters {
   height: 100%;
   width: 45vw;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#careers {
+  position: absolute;
+  top: 230rem;
+  left: 75rem;
+  font-size: 4rem;
+}
+
+#career {
+  position: absolute;
+  top: 237rem;
+  left: 75rem;
+}
+
+#open {
+  position: absolute;
+  top: 245rem;
+  left: 78rem;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
 }

@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -23,7 +28,7 @@
     <title>Stornoway Construction</title>
   </head>
   <body>
-    <div class="about-bg">
+    <div class="contuct-bg">
       <nav class="navbar navbar-expand-lg py-5 pb-0">
         <div class="container">
           <a href="index.html" class="navbar-brand text-light fw-bolder fs-4"
@@ -87,93 +92,62 @@
         </div>
       </nav>
 
-      <div class="ms-5 py-5 mt-5">
-        <div class="py-5 mt-5 ms-5">
-          <h1 class="fw-bold ms-5 text-light py-5 mt-5" style="font-size: 4rem">
-            ABOUT
+      <div class="ms-3 py-5 mt-5">
+        <div class="py-5 mt-5">
+          <h1
+            class="fw-bold ms-5 text-light py-5 mt-5 sm-auto"
+            style="font-size: 4rem"
+          >
+            CONTUCTS
           </h1>
         </div>
       </div>
     </div>
 
-    <section class="py-5 sm-auto mt-5">
+    <section class="py-5 mt-5">
       <div class="container py-5 mt-5">
-        <div class="row">
-          <div class="col">
-            <h1 class="fw-bold fs-2">
-              Stornoway services <br />
-              and history
-            </h1>
+        <div class="row g-4">
+          <div class="col-md">
+            <div id="map"></div>
           </div>
+          <div class="col-md">
+            <h2 class="text-center mb-4 fw-bold">Conact Us</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Visit Stornoway:</span>
+                Muller Strasse 34, 74133 Hamburg, Germany
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Stornoway Phone:</span>
+                +18187882178
+              </li>
 
-          <div class="col">
-            <p class="fs-6 fw-bold text-secondary">
-              Stornoway started as a statement against the <br />
-              sloppy professional standards that dominated the <br />
-              field of construction services 20 years ago. We <br />
-              wanted to set a new, high standard and work as <br />
-              consultants, solving our client's problems.
-            </p>
-          </div>
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Stornoway Service Phone:</span>
+                +18187882178
+              </li>
 
-          <div class="col">
-            <p class="fs-6 fw-bold text-secondary">
-              The company quickly grew and cemented itself as <br />
-              the new golden standard in commercial <br />
-              construction. Today we continue to build on that <br />
-              legacy and strive for excellence at everything we do.
-            </p>
-          </div>
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Stornoway Colsontant:</span>
+                +18187882178
+              </li>
 
-          <div class="row sm-auto">
-            <div class="col mt-5">
-              <img
-                src="/images/aboutservice1.webp"
-                alt=""
-                class="mt-5 img-fluid"
-              />
-            </div>
-            <div class="col mt-5">
-              <img
-                src="/images/aboutservice2.avif"
-                alt=""
-                class="aboutservices mt-5"
-              />
-            </div>
-          </div>
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Stornoway Email:</span>
+                +info@stornoway.com
+              </li>
 
-          <div class="row py-5 mt-5">
-            <div class="col mt-5">
-              <h1 class="fw-bold fs-2">
-                Stornoway services <br />
-                and history
-              </h1>
-            </div>
-
-            <div class="col mt-5">
-              <p class="fs-6 fw-bold text-secondary">
-                Stornoway started as a statement against the <br />
-                sloppy professional standards that dominated the <br />
-                field of construction services 20 years ago. We <br />
-                wanted to set a new, high standard and work as <br />
-                consultants, solving our client's problems.
-              </p>
-            </div>
-
-            <div class="col mt-5">
-              <p class="fs-6 fw-bold text-secondary">
-                The company quickly grew and cemented itself as <br />
-                the new golden standard in commercial <br />
-                construction. Today we continue to build on that <br />
-                legacy and strive for excellence at everything we do.
-              </p>
-            </div>
+              <li class="list-group-item">
+                <span class="fw-bold ms-5">Stornoway Consoltant:</span>
+                +info@stornoway.com
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="page-footer pt-5 bg-black pb-5">
+    <footer class="page-footer pt-5 bg-black pb-5 mt-5">
       <div class="container text-center text-md-left">
         <div class="row">
           <div class="col">
@@ -197,5 +171,18 @@
         </div>
       </div>
     </footer>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoieWFoeWFjb2RlcyIsImEiOiJjbDVzY29uczMwYWh1M2NteDU4OHlpYjdmIn0.6TfvWqUJMHcR4mah6Mv9SA";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-71.060982, 42.35725],
+        zomm: 18,
+      });
+    </script>
   </body>
 </html>
